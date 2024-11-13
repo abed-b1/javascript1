@@ -33,7 +33,7 @@ app.post('/books', (req, res) => {
         publishedYear
     };
     books.push(newBook);
-    res.status(201).json(newBook);  // Return the entire book object
+    res.status(201).json(newBook);  
 });
 
 app.put('/books/:id', (req, res) => {
